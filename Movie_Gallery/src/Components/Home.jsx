@@ -12,7 +12,7 @@ export default function Home() {
     }
 
     const getmovies = async () => {
-        const movies = await fetch(`http://www.omdbapi.com/?apikey=3760d0c0&s=${search}`)
+        const movies = await fetch(`https://www.omdbapi.com/?apikey=3760d0c0&s=${search}`)
         const moviesdata = await movies.json()
         setData(moviesdata.Search)
         console.log(data)
