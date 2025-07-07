@@ -39,7 +39,7 @@ export default function Home() {
                 <button className='text-xl h-10 w-fit border-2 border-slate-400 rounded-4xl flex items-center justify-between p-5 m-2 hover:border-slate-600' onClick={getmovies}>Search <Search className='m-2'/></button>
             </div>
             {
-                !data ? <p className='place-items-center text-center text-2xl'>Movies not found!</p> :
+                !data ? <p className='place-items-center text-center text-2xl'>Movies not found....!</p> :
                 <div className='md:mx-15 p-5 grid grid-cols-1 md:grid-cols-4 gap-10'>
                     {data.map((d,index) => {
                         return(
